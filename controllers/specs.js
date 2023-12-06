@@ -5,7 +5,6 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-const axios = require("axios");
 module.exports = {
   getAllspecs: (req, res) => {
     dbSpecs
