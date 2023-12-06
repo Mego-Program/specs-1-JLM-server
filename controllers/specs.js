@@ -114,21 +114,4 @@ module.exports = {
         });
     });
   },
-
-  getOtherData: (req, res) => {
-    axios
-      .get("")
-      .then((response) => {
-        console.log(response.data);
-
-        res.status(200).json({
-          data: response.data,
-        });
-      })
-      .catch((error) => {
-        res.status(500).json({
-          error,
-        });
-      });
-  },
 };
